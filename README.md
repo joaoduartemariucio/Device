@@ -14,7 +14,7 @@ var deviceType: DeviceType
 
 ```swift
 dependencies: [
-    .package(url:"https://github.com/joaoduartemariucio/Device.swift", from: "1.3.0")
+    .package(url:"https://github.com/joaoduartemariucio/Device", from: "1.3.0")
 ]
 ```
 
