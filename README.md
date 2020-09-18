@@ -1,9 +1,5 @@
 # Device
 
-[![Language][lang-image]][lang-url]
-[![License][license-image]][license-url]
-[![Platform][platform-image]][cocoapod-url]
-
 Super-lightweight library to detect used device
 
 `Device.swift` extends the `UIDevice` class by adding a property:
