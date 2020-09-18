@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.3.0
+
+- **Added**:  Support Swift Packages
+
 ## 1.2.2
 
 - **Added**: iPad 11 Inch

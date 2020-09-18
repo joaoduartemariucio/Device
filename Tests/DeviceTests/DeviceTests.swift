@@ -103,7 +103,7 @@ class DeviceTests: XCTestCase {
                 "iPad3,6", "iPad4,1", "iPad4,2", "iPad4,3", "iPad4,4", "iPad4,5", "iPad4,6",
                 "iPad4,7", "iPad4,8", "iPad5,1", "iPad5,2", "iPad5,3", "iPad5,4", "iPad6,3",
                 "iPad6,4", "iPad6,7", "iPad6,8", "iPad7,1", "iPad7,2", "iPad7,3", "iPad7,4",
-                "iPad6,11", "iPad6,12", "iPad7,5", "iPad7,6", "iPad8,1", "iPad8,2", "iPad8,3", 
+                "iPad6,11", "iPad6,12", "iPad7,5", "iPad7,6", "iPad8,1", "iPad8,2", "iPad8,3",
                 "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8"]
     }
 
@@ -129,21 +129,21 @@ class DeviceTests: XCTestCase {
         }
     }
 
-    func testiPhoneTypes() {
+    func testPhoneTypes() {
         for type in iPhoneTypes {
             let deviceType = DeviceType(identifier: type)
             XCTAssertNotEqual(deviceType, DeviceType.notAvailable)
         }
     }
 
-    func testiPodTypes() {
+    func testPodTypes() {
         for type in iPodTypes {
             let deviceType = DeviceType(identifier: type)
             XCTAssertNotEqual(deviceType, DeviceType.notAvailable)
         }
     }
 
-    func testiPadTypes() {
+    func testPadTypes() {
         for type in iPadTypes {
             let deviceType = DeviceType(identifier: type)
             XCTAssertNotEqual(deviceType, DeviceType.notAvailable)
@@ -163,4 +163,14 @@ class DeviceTests: XCTestCase {
             XCTAssertEqual(type.identifiers, type.testIdentifiers)
         }
     }
+    
+    static var allTests = [
+        ("testCurrentDevice", testCurrentDevice),
+        ("testSimulatorTypes", testSimulatorTypes),
+        ("testPhoneTypes", testPhoneTypes),
+        ("testPodTypes", testPodTypes),
+        ("testPadTypes", testPadTypes),
+        ("testEmptyDevice", testEmptyDevice),
+        ("testDeviceTypeAllCases", testDeviceTypeAllCases)
+    ]
 }
